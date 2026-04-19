@@ -2,6 +2,9 @@
 __pycache__/
 *.py[codz]
 *$py.class
+*.pyc
+.DS_Store
+data/sec_chunks/*.json
 
 # C extensions
 *.so
