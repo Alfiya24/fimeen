@@ -189,3 +189,4 @@ beautifulsoup4==4.14.3
 lxml==6.1.0
 requests==2.32.5
 requests-toolbelt==1.0.0
+tenacity==9.1.4
