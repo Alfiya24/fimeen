@@ -5,6 +5,7 @@ __pycache__/
 *.pyc
 .DS_Store
 data/sec_chunks/*.json
+data/sec_filings/*.txt
 
 # C extensions
 *.so
