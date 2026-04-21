@@ -1,0 +1,100 @@
+[
+  {
+    "question": "What was Microsoft's cloud revenue growth in fiscal 2024?",
+    "vanilla_rag": {
+      "answer": "According to the SEC filing, Microsoft Cloud revenue increased 23% to $137.4 billion in fiscal year 2024 compared with fiscal year 2023 [MSFT_chunk_001].",
+      "latency_sec": 6.73
+    },
+    "fimeen": {
+      "final_answer": "Based on the retrieved documents, the following can be verified:\n\n1. Microsoft Cloud revenue increased 23% in fiscal year 2024 compared with fiscal year 2023. [MSFT_chunk_001]\n2. Microsoft Cloud revenue was $137.4 billion in fiscal year 2024. [MSFT_chunk_001]",
+      "total_claims": 2,
+      "supported": 2,
+      "contradicted": 0,
+      "unsupported": 0,
+      "faithfulness_rate": 100.0,
+      "hallucinations_caught": 0,
+      "dropped_claims": [],
+      "latency_sec": 6.1
+    }
+  },
+  {
+    "question": "What are NVIDIA's main risks from U.S. export controls?",
+    "vanilla_rag": {
+      "answer": "Based on the SEC filings, NVIDIA's main risks from U.S. export controls are:\n\n1. **Market exclusion**: Export controls could effectively exclude NVIDIA from all or part of the China market and other impacted regions like the Middle East and \"Tier 2\" countries designated by the AI Diffusion rule [NVDA_chunk_005].\n\n2. **Product licensing uncertainty**: The January 15, 2025 \"AI Diffusion\" rule imposes worldwide licensing requirements on numerous NVIDIA products (including A100, H100, H200, B100, B200, GB200, and others), with no assurance that the U.S. Government will grant licenses or act on applications timely [NVDA_chunk_004].\n\n3. **Inventory and development challenges**: NVIDIA may be unable to sell inventory of restricted products and may struggle to develop replacement products not subject to licensing requirements [NVDA_chunk_005].\n\n4. **Supply chain constraints**: Export controls could limit alternative manufacturing locations, which is particularly problematic since NVIDIA's supply chain is currently concentrated in the Asia-Pacific region [NVDA_chunk_005].\n\n5. **Competitive harm**: Export controls have already harmed NVIDIA's competitive position, with potential for further long-term harm if controls change [NVDA_chunk_004].",
+      "latency_sec": 4.77
+    },
+    "fimeen": {
+      "final_answer": "Based on the retrieved documents, the following can be verified:\n\n1. Export restrictions could exclude NVIDIA from all or part of the China market. [NVDA_chunk_005]\n2. Export restrictions could exclude NVIDIA from the Middle East market. [NVDA_chunk_005]\n3. Export restrictions could exclude NVIDIA from countries designated 'Tier 2' by the AI Diffusion IFR. [NVDA_chunk_005]\n4. NVIDIA may be unable to sell inventory of restricted products. [NVDA_chunk_005]\n5. NVIDIA may be unable to develop non-restricted replacements. [NVDA_chunk_005]\n6. The USG published the 'AI Diffusion' interim final rule on January 15, 2025. [NVDA_chunk_004]\n7. The AI Diffusion interim final rule imposes worldwide licensing requirements on NVIDIA H100 products. [NVDA_chunk_004]\n8. The AI Diffusion interim final rule imposes worldwide licensing requirements on NVIDIA H200 products. [NVDA_chunk_004]\n9. The AI Diffusion interim final rule imposes worldwide licensing requirements on NVIDIA B100 products. [NVDA_chunk_004]\n10. The AI Diffusion interim final rule imposes worldwide licensing requirements on NVIDIA B200 products. [NVDA_chunk_004]\n11. License applications have no guarantee of approval. [NVDA_chunk_004]\n12. License applications have no guarantee of timely processing. [NVDA_chunk_004]\n13. New export controls could limit alternative manufacturing locations for NVIDIA. [NVDA_chunk_005]\n14. NVIDIA's supply chain is currently concentrated in the Asia-Pacific region. [NVDA_chunk_005]\n15. Export controls have already harmed NVIDIA's competitive position. [NVDA_chunk_004]\n16. The USG could make additional changes that cause further long-term harm to NVIDIA. [NVDA_chunk_005]",
+      "total_claims": 17,
+      "supported": 16,
+      "contradicted": 1,
+      "unsupported": 0,
+      "faithfulness_rate": 94.1,
+      "hallucinations_caught": 1,
+      "dropped_claims": [
+        {
+          "claim": "The AI Diffusion interim final rule imposes worldwide licensing requirements on NVIDIA A100 products",
+          "reason": "Contradicted",
+          "evidence": "the IFR will, unless modified, impose a worldwide licensing requirement on all products classified under Export Control Classification Numbers, or ECCNs, 3A090.a, 4A090.a, or corresponding .z ECCNs... Unless a license exception is available, the worldwide licensing requirements will apply to the following NVIDIA products, and any others we develop that meet the characteristics of 3A090.a or 4A090.a, including but not limited to: A100, A800, H100, H200, H800, B100, B200, GB200, L4, L40S, and RTX 6000 Ada.",
+          "chunk_id": "NVDA_chunk_004",
+          "reasoning": "The claim states the rule imposes requirements on 'A100 products' specifically, but the chunk clarifies it imposes a worldwide licensing requirement on all products meeting certain ECCNs (3A090.a, 4A090.a), which includes A100 plus many other NVIDIA products—not A100 products alone."
+        }
+      ],
+      "latency_sec": 57.01
+    }
+  },
+  {
+    "question": "What new products did Apple launch in fiscal 2024?",
+    "vanilla_rag": {
+      "answer": "Based on the SEC filing, Apple launched the following new products in fiscal 2024 [AAPL_chunk_000]:\n\n**First Quarter 2024:** MacBook Pro 14-in., MacBook Pro 16-in., and iMac\n\n**Second Quarter 2024:** MacBook Air 13-in. and MacBook Air 15-in.\n\n**Third Quarter 2024:** iPad Air, iPad Pro, and updates to operating systems (iOS 18, macOS Sequoia, iPadOS 18, watchOS 11, visionOS 2, and tvOS 18), plus Apple Intelligence™\n\n**Fourth Quarter 2024:** iPhone 16, iPhone 16 Plus, iPhone 16 Pro, iPhone 16 Pro Max, Apple Watch Series 10, and AirPods 4",
+      "latency_sec": 2.65
+    },
+    "fimeen": {
+      "final_answer": "Based on the retrieved documents, the following can be verified:\n\n1. Apple launched MacBook Pro 14-in. in Q1 fiscal 2024. [AAPL_chunk_000]\n2. Apple launched MacBook Pro 16-in. in Q1 fiscal 2024. [AAPL_chunk_000]\n3. Apple launched iMac in Q1 fiscal 2024. [AAPL_chunk_000]\n4. Apple launched MacBook Air 13-in. in Q2 fiscal 2024. [AAPL_chunk_000]\n5. Apple launched MacBook Air 15-in. in Q2 fiscal 2024. [AAPL_chunk_000]\n6. Apple launched iPad Air in Q3 fiscal 2024. [AAPL_chunk_000]\n7. Apple launched iPad Pro in Q3 fiscal 2024. [AAPL_chunk_000]\n8. Apple launched iOS 18 in Q3 fiscal 2024. [AAPL_chunk_000]\n9. Apple launched macOS Sequoia in Q3 fiscal 2024. [AAPL_chunk_000]\n10. Apple launched iPadOS 18 in Q3 fiscal 2024. [AAPL_chunk_000]\n11. Apple launched watchOS 11 in Q3 fiscal 2024. [AAPL_chunk_000]\n12. Apple launched visionOS 2 in Q3 fiscal 2024. [AAPL_chunk_000]\n13. Apple launched tvOS 18 in Q3 fiscal 2024. [AAPL_chunk_000]\n14. Apple launched Apple Intelligence in Q3 fiscal 2024. [AAPL_chunk_000]\n15. Apple launched iPhone 16 in Q4 fiscal 2024. [AAPL_chunk_000]\n16. Apple launched iPhone 16 Plus in Q4 fiscal 2024. [AAPL_chunk_000]\n17. Apple launched iPhone 16 Pro in Q4 fiscal 2024. [AAPL_chunk_000]\n18. Apple launched iPhone 16 Pro Max in Q4 fiscal 2024. [AAPL_chunk_000]\n19. Apple launched Apple Watch Series 10 in Q4 fiscal 2024. [AAPL_chunk_000]\n20. Apple launched AirPods 4 in Q4 fiscal 2024. [AAPL_chunk_000]",
+      "total_claims": 20,
+      "supported": 20,
+      "contradicted": 0,
+      "unsupported": 0,
+      "faithfulness_rate": 100.0,
+      "hallucinations_caught": 0,
+      "dropped_claims": [],
+      "latency_sec": 47.55
+    }
+  },
+  {
+    "question": "How did Microsoft's Azure growth compare to prior year?",
+    "vanilla_rag": {
+      "answer": "Based on the provided context, Microsoft's Azure and other cloud services revenue grew **30%** year-over-year [MSFT_chunk_010]. More broadly, server products and cloud services revenue (which includes Azure) increased **22%** [MSFT_chunk_001], driven primarily by Azure's strong performance. The context also notes that Azure improvements contributed to gross margin gains, with scaling of AI infrastructure being a key driver [MSFT_chunk_008].",
+      "latency_sec": 2.02
+    },
+    "fimeen": {
+      "final_answer": "Based on the retrieved documents, the following can be verified:\n\n1. Azure and other cloud services revenue grew 30% year-over-year. [MSFT_chunk_010]\n2. Server products and cloud services revenue increased 22% in fiscal year 2024. [MSFT_chunk_001]\n3. Azure improvements contributed to gross margin gains. [MSFT_chunk_010]\n4. Microsoft Cloud gross margin percentage increased when excluding the impact of accounting estimate changes. [MSFT_chunk_008]\n5. Azure improvement and scaling AI infrastructure drove Microsoft Cloud gross margin gains. [MSFT_chunk_008]\n6. Sales mix shift to Azure partially offset gross margin gains. [MSFT_chunk_008]",
+      "total_claims": 6,
+      "supported": 6,
+      "contradicted": 0,
+      "unsupported": 0,
+      "faithfulness_rate": 100.0,
+      "hallucinations_caught": 0,
+      "dropped_claims": [],
+      "latency_sec": 17.73
+    }
+  },
+  {
+    "question": "What is NVIDIA's policy on supply chain and demand estimates?",
+    "vanilla_rag": {
+      "answer": "Based on the provided context, NVIDIA does not have a formal \"policy\" on supply chain and demand estimates explicitly stated. However, the filing does acknowledge a key challenge related to demand estimates:\n\nAccording to [NVDA_chunk_000], \"Demand estimates for our products, applications, and services can be incorrect and create volatility in our revenue or supply levels. We may not be able to generate significant revenue from them.\"\n\nThis statement indicates that NVIDIA recognizes demand estimation as a risk factor that can affect revenue and supply volatility, but the context provided does not detail a specific policy or methodology for managing supply chain or making demand estimates. To find comprehensive information about NVIDIA's supply chain management policies or demand forecasting procedures, you would need to review additional sections of the 10-K filing beyond what is included in these chunks.",
+      "latency_sec": 3.28
+    },
+    "fimeen": {
+      "final_answer": "Based on the retrieved documents, the following can be verified:\n\n1. NVIDIA acknowledges that demand estimates for its products, applications, and services can be incorrect. [NVDA_chunk_000]\n2. NVIDIA acknowledges that incorrect demand estimates can create volatility in revenue or supply levels. [NVDA_chunk_000]\n3. NVIDIA states it may not be able to generate significant revenue from some products, applications, and services. [NVDA_chunk_000]\n4. NVIDIA management evaluates assumptions related to future demand by considering current and past results. [NVDA_chunk_034]\n5. NVIDIA management evaluates assumptions related to future demand by considering historical product life cycle. [NVDA_chunk_034]\n6. NVIDIA management evaluates assumptions related to future demand by considering consistency with external market and industry data. [NVDA_chunk_034]\n7. NVIDIA management evaluates assumptions related to future demand by considering changes in technology. [NVDA_chunk_034]",
+      "total_claims": 7,
+      "supported": 7,
+      "contradicted": 0,
+      "unsupported": 0,
+      "faithfulness_rate": 100.0,
+      "hallucinations_caught": 0,
+      "dropped_claims": [],
+      "latency_sec": 25.81
+    }
+  }
+]
