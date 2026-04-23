@@ -65,10 +65,11 @@ Retrieval: MongoDB Atlas Vector Search
 Embeddings: sentence-transformers
 Frontend: Streamlit
 Running the app
-# install dependencies
+
+install dependencies
 pip install -r requirements.txt
 
-# run the app
+run the app
 streamlit run app.py
 Example queries
 What was Microsoft's cloud revenue growth in fiscal 2024?
