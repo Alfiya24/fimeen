@@ -4,6 +4,7 @@ anthropic==0.40.0
 tenacity==9.1.4
 langgraph==0.2.50
 langchain-core==0.3.63
+langsmith==0.1.147
 pymongo==4.16.0
 certifi==2026.2.25
 sentence-transformers==3.3.1
